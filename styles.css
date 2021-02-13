@@ -18,76 +18,163 @@
 .header {
   position: relative;
 }
-.card {
+.content {
   position: absolute;
-  transition: 0.3s;
+  width: 500px;
+  height: 250px;
+  margin: auto;
+  top: 25px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  z-index: 700;
+  font-weight: 300;
+  color: #fff;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
   border-radius: 12px;
   text-align: center;
   width: 500px;
   height: 250px;
   top: 50%;
   left: 50%;
+  background: linear-gradient(-45deg, rgb(226, 194, 14), #ff0055);
   transform: translate(-50%, -50%);
-  background-color: cornsilk;
+  filter: blur(2px);
 }
+
 h4,
 h3,
 input [type="radio"] {
+  position: relative;
   font-family: "Fjalla One", sans-serif;
 }
-.card:hover {
+input[type="radio"]:hover {
+  cursor: pointer;
+  background-color: rgb(19, 14, 14);
+}
+input [type="radio"] {
+  margin: 10px;
+}
+label {
+  display: inline-block;
+  position: relative;
+  font-weight: 100;
+  font-size: 17px;
+  padding: 2px 2px;
+  border-bottom: 2px blue solid;
+
+  z-index: 9;
+  cursor: pointer;
+  -webkit-transition: all 0.25s linear;
+}
+label:hover {
+  color: rgb(91, 224, 64);
+}
+/* .content .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  transform: translateY(30px);
+} */
+.content .card {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
+
 .container .section:nth-child(1) {
-  background: #f00 url("steeden.jpg");
+  background: #f00 url("./images/steeden.jpg");
   background-size: cover;
   background-attachment: fixed;
 }
+
 .container .section:nth-child(2) {
-  background: rgb(52, 28, 107) url("steeden.jpg");
+  background: rgb(52, 28, 107) url("./images/steeden.jpg");
   background-size: cover;
   background-attachment: fixed;
 }
+
 .container .section:nth-child(3) {
-  background: rgb(80, 155, 37) url("steeden.jpg");
+  background: rgb(80, 155, 37) url("./images/steeden.jpg");
   background-size: cover;
   background-attachment: fixed;
 }
+
 .container .section:nth-child(4) {
-  background: rgb(167, 18, 110) url("steeden.jpg");
+  background: rgb(167, 18, 110) url("./images/steeden.jpg");
   background-size: cover;
   background-attachment: fixed;
 }
 .container .section:nth-child(5) {
-  background: rgb(172, 209, 8) url("steeden.jpg");
+  background: rgb(172, 209, 8) url("./images/steeden.jpg");
   background-size: cover;
   background-attachment: fixed;
 }
 .container .section:nth-child(6) {
-  background: rgb(87, 82, 82) url("steeden.jpg");
+  background: rgb(87, 82, 82) url("./images/steeden.jpg");
   background-size: cover;
   background-attachment: fixed;
 }
 .container .section:nth-child(7) {
-  background: rgb(0, 183, 255) url("steeden.jpg");
+  background: rgb(0, 183, 255) url("./images/steeden.jpg");
   background-size: cover;
   background-attachment: fixed;
 }
 .container .section:nth-child(8) {
-  background: rgb(200, 108, 192) url("steeden.jpg");
+  background: rgb(200, 108, 192) url("./images/steeden.jpg");
   background-size: cover;
   background-attachment: fixed;
 }
 .container .section:nth-child(9) {
-  background: rgb(255, 166, 0) url("steeden.jpg");
+  background: rgb(255, 166, 0) url("./images/steeden.jpg");
   background-size: cover;
   background-attachment: fixed;
 }
 .container .section:nth-child(10) {
-  background: rgb(192, 28, 28) url("steeden.jpg");
+  background: rgb(192, 28, 28) url("./images/steeden.jpg");
   background-size: cover;
   background-attachment: fixed;
 }
+.card:nth-child(1) {
+  background: linear-gradient(-45deg, rgb(226, 194, 14), #ff0055);
+}
+.card:nth-child(2) {
+  background: linear-gradient(-45deg, rgb(26, 194, 14), #10333b);
+}
+.card:nth-child(3) {
+  background: linear-gradient(-45deg, rgb(226, 194, 14), #ff0055);
+}
+.card:nth-child(4) {
+  background: linear-gradient(-45deg, rgb(226, 194, 14), #ff0055);
+}
+.card:nth-child(5) {
+  background: linear-gradient(-45deg, rgb(226, 194, 14), #ff0055);
+}
+.card:nth-child(6) {
+}
+.card:nth-child(7) {
+  background: linear-gradient(-45deg, rgb(226, 194, 14), #ff0055);
+}
+.card:nth-child(8) {
+  background: linear-gradient(-45deg, rgb(226, 194, 14), #ff0055);
+}
+.card:nth-child(9) {
+  background: linear-gradient(-45deg, rgb(226, 194, 14), #ff0055);
+}
+.card:nth-child(10) {
+  background: linear-gradient(-45deg, rgb(226, 194, 14), #ff0055);
+}
+/*
+.content .card:nth-child(even)::before,
+.content .card:nth-child(even)::after {
+  background: linear-gradient(-50deg, rgb(26, 194, 14), #ff55);
+} */
 
 .imageContainer {
   position: relative;
@@ -96,6 +183,7 @@ input [type="radio"] {
   border-radius: 10px;
   margin: auto;
   animation: slide 30s infinite alternate;
+  z-index: 10;
 }
 
 @keyframes slide {
