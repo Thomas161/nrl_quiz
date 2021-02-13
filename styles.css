@@ -67,6 +67,7 @@ label {
   font-size: 17px;
   padding: 2px 2px;
   border-bottom: 2px blue solid;
+  font-family: "Fjalla One", sans-serif;
 
   z-index: 9;
   cursor: pointer;
@@ -74,6 +75,18 @@ label {
 }
 label:hover {
   color: rgb(91, 224, 64);
+}
+.nrlTeams {
+  border-radius: 50px;
+}
+#gio {
+  position: relative;
+  height: 150px;
+  width: 350px;
+  transform: skewY(2deg);
+}
+#gio:hover {
+  box-shadow: 0 15px 10px #777;
 }
 /* .content .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
