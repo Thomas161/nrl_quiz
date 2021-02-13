@@ -108,6 +108,14 @@ label:hover {
   bottom: 0;
   right: 0;
 }
+#finishButton {
+  position: absolute;
+  width: 100px;
+  height: 30px;
+  bottom: 0;
+  left: 10px;
+  background: #0d93a2;
+}
 /* .content .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   transform: translateY(30px);
