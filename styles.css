@@ -64,7 +64,7 @@ label {
   display: inline-block;
   position: relative;
   font-weight: 100;
-  font-size: 17px;
+  font-size: 15px;
   padding: 2px 2px;
   border-bottom: 2px blue solid;
   font-family: "Fjalla One", sans-serif;
@@ -174,34 +174,8 @@ label:hover {
   background-size: cover;
   background-attachment: fixed;
 }
-.card:nth-child(1) {
-  background: linear-gradient(-45deg, rgb(226, 194, 14), #ff0055);
-}
-.card:nth-child(2) {
-  background: linear-gradient(-45deg, rgb(26, 194, 14), #10333b);
-}
-.card:nth-child(3) {
-  background: linear-gradient(-45deg, rgb(226, 194, 14), #ff0055);
-}
-.card:nth-child(4) {
-  background: linear-gradient(-45deg, rgb(226, 194, 14), #ff0055);
-}
-.card:nth-child(5) {
-  background: linear-gradient(-45deg, rgb(226, 194, 14), #ff0055);
-}
-.card:nth-child(6) {
-}
-.card:nth-child(7) {
-  background: linear-gradient(-45deg, rgb(226, 194, 14), #ff0055);
-}
-.card:nth-child(8) {
-  background: linear-gradient(-45deg, rgb(226, 194, 14), #ff0055);
-}
-.card:nth-child(9) {
-  background: linear-gradient(-45deg, rgb(226, 194, 14), #ff0055);
-}
-.card:nth-child(10) {
-  background: linear-gradient(-45deg, rgb(226, 194, 14), #ff0055);
+#noExtraContent {
+  height: 125px;
 }
 /*
 .content .card:nth-child(even)::before,
