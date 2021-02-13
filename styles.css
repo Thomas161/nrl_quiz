@@ -88,6 +88,26 @@ label:hover {
 #gio:hover {
   box-shadow: 0 15px 10px #777;
 }
+#sterlo {
+  position: absolute;
+  height: 145px;
+  width: 33%;
+  left: 0;
+  top: 56px;
+  margin: auto;
+  bottom: 0;
+  right: 0;
+}
+#lockyer {
+  position: absolute;
+  height: 155px;
+  width: 275px;
+  left: 0;
+  top: 56px;
+  margin: auto;
+  bottom: 0;
+  right: 0;
+}
 /* .content .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   transform: translateY(30px);
