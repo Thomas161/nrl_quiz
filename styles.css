@@ -108,12 +108,16 @@ label:hover {
   bottom: 0;
   right: 0;
 }
-#finishButton {
+input[type="button"] {
   position: absolute;
+  display: block;
   width: 100px;
   height: 30px;
+  margin: 100px auto;
+  right: 0;
   bottom: 0;
-  left: 10px;
+  left: 0;
+  /* top: 12px; */
   background: #0d93a2;
 }
 /* .content .card:hover {
@@ -234,6 +238,7 @@ label:hover {
 }
 .progress-title {
   position: absolute;
+  display: none;
   top: 5px;
   right: 5px;
   transform: translate(-50%);
