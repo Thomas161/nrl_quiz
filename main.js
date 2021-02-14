@@ -178,9 +178,9 @@ function question10() {
         pScore -= 0;
         percentageScore(pScore);
       }
-      percentageScore(pScore);
     }
   }
+  document.querySelector(".progress-title").style.display = "block";
 }
 
 function progressBarUpdate(value) {
@@ -196,6 +196,6 @@ function percentageScore(value) {
   let percentScore = (document.querySelector(
     ".progress-title"
   ).innerHTML = `${value}%`);
-  percentScore.style.display = "block";
+
   return percentScore;
 }

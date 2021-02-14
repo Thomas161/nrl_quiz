@@ -1,0 +1,24 @@
+.imageContainer {
+  position: relative;
+  width: 300px;
+  height: 130px;
+  border-radius: 10px;
+  margin: auto;
+  animation: slide 30s infinite alternate;
+  z-index: 10;
+}
+
+@keyframes slide {
+  25% {
+    background: url("../images/benji.jpg");
+  }
+  50% {
+    background: url("../images/fifita.jpg");
+  }
+  75% {
+    background: url("../images/wighton.jpeg");
+  }
+  100% {
+    background: url("../images/smith.png");
+  }
+}

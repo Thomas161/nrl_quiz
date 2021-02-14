@@ -1,0 +1,25 @@
+.progress {
+  position: relative;
+  width: 250px;
+  height: 30px;
+  left: 0;
+  border-radius: 10px;
+  background: rgb(87, 94, 94);
+  overflow: hidden;
+  margin: 10px;
+}
+.progress-fill {
+  width: 0%;
+  height: 30px;
+  background: #009579;
+  transition: all 0.3s;
+}
+.progress-title {
+  position: absolute;
+  display: none;
+  top: 5px;
+  right: 5px;
+  transform: translate(-50%);
+  font: bold 8px;
+  color: #fff;
+}
